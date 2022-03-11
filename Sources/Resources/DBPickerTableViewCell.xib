@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="145" id="6fx-fa-rNG" customClass="DBPickerTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="145"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6fx-fa-rNG" id="Ubg-hw-3gg">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="144.66666666666666"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2g7-NK-Yog">
+                        <rect key="frame" x="20" y="8" width="240" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="240" id="WdQ-Df-NF0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Szv-0d-FRD">
+                        <rect key="frame" x="38" y="85" width="299" height="30.666666666666671"/>
+                    </slider>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxs-sR-Okg">
+                        <rect key="frame" x="166.66666666666666" y="44" width="42" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="iiM-TB-6K9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCd-Fg-hmB">
+                        <rect key="frame" x="268" y="8" width="87" height="30"/>
+                        <color key="backgroundColor" red="0.79903393430000003" green="1" blue="0.86150696540000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" title="Apply">
+                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fxs-sR-Okg" firstAttribute="top" secondItem="Ubg-hw-3gg" secondAttribute="top" constant="44" id="DXs-yx-qwF"/>
+                    <constraint firstItem="fxs-sR-Okg" firstAttribute="centerX" secondItem="Szv-0d-FRD" secondAttribute="centerX" id="Gee-qz-LYl"/>
+                    <constraint firstItem="Szv-0d-FRD" firstAttribute="leading" secondItem="Ubg-hw-3gg" secondAttribute="leading" constant="40" id="Vrm-tf-Erk"/>
+                    <constraint firstItem="cCd-Fg-hmB" firstAttribute="leading" secondItem="2g7-NK-Yog" secondAttribute="trailing" constant="8" symbolic="YES" id="Xy6-Qk-L59"/>
+                    <constraint firstItem="Szv-0d-FRD" firstAttribute="top" secondItem="fxs-sR-Okg" secondAttribute="bottom" constant="20" id="epu-xp-cN8"/>
+                    <constraint firstItem="2g7-NK-Yog" firstAttribute="leading" secondItem="Ubg-hw-3gg" secondAttribute="leadingMargin" id="qD8-Pr-12e"/>
+                    <constraint firstItem="cCd-Fg-hmB" firstAttribute="trailing" secondItem="Ubg-hw-3gg" secondAttribute="trailingMargin" id="qWy-Hi-xXW"/>
+                    <constraint firstItem="cCd-Fg-hmB" firstAttribute="top" secondItem="2g7-NK-Yog" secondAttribute="top" id="rDo-1d-YqC"/>
+                    <constraint firstAttribute="bottom" secondItem="Szv-0d-FRD" secondAttribute="bottom" constant="30" id="rRU-DK-LX8"/>
+                    <constraint firstItem="fxs-sR-Okg" firstAttribute="top" secondItem="2g7-NK-Yog" secondAttribute="bottom" constant="15" id="u9m-Uw-sCs"/>
+                    <constraint firstAttribute="trailing" secondItem="Szv-0d-FRD" secondAttribute="trailing" constant="40" id="yxR-6q-sVI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="applyButton" destination="cCd-Fg-hmB" id="dH6-de-0HT"/>
+                <outlet property="slider" destination="Szv-0d-FRD" id="fTO-fZ-p77"/>
+                <outlet property="titleLabel" destination="2g7-NK-Yog" id="Ee7-FJ-Kbh"/>
+                <outlet property="valueLabel" destination="fxs-sR-Okg" id="w8F-Lt-9h6"/>
+            </connections>
+            <point key="canvasLocation" x="44.20289855072464" y="21.09375"/>
+        </tableViewCell>
+    </objects>
+</document>

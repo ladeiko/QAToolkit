@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="145" id="6fx-fa-rNG" customClass="DBSliderTableViewCellInt">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="145"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6fx-fa-rNG" id="Ubg-hw-3gg">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="144.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2g7-NK-Yog">
+                        <rect key="frame" x="16" y="8" width="343" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vSj-n8-bav" userLabel="Slider">
+                        <rect key="frame" x="39" y="105" width="297" height="35"/>
+                    </slider>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIc-oC-pLc" userLabel="Value Label">
+                        <rect key="frame" x="166.5" y="62" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="GIc-oC-pLc" firstAttribute="centerY" secondItem="Ubg-hw-3gg" secondAttribute="centerY" id="1OL-3a-6dg"/>
+                    <constraint firstItem="2g7-NK-Yog" firstAttribute="leading" secondItem="Ubg-hw-3gg" secondAttribute="leading" constant="16" id="2MP-pE-Ahn"/>
+                    <constraint firstItem="GIc-oC-pLc" firstAttribute="centerX" secondItem="2g7-NK-Yog" secondAttribute="centerX" id="3Xu-xn-6DR"/>
+                    <constraint firstItem="vSj-n8-bav" firstAttribute="bottom" secondItem="Ubg-hw-3gg" secondAttribute="bottomMargin" constant="5" id="9Cn-DT-K4a"/>
+                    <constraint firstAttribute="trailing" secondItem="2g7-NK-Yog" secondAttribute="trailing" constant="16" id="BaQ-VS-5ep"/>
+                    <constraint firstItem="vSj-n8-bav" firstAttribute="top" secondItem="GIc-oC-pLc" secondAttribute="bottom" constant="22" id="Chy-Ob-AMY"/>
+                    <constraint firstItem="vSj-n8-bav" firstAttribute="leading" secondItem="Ubg-hw-3gg" secondAttribute="leadingMargin" constant="25" id="Kml-5u-Gpn"/>
+                    <constraint firstItem="2g7-NK-Yog" firstAttribute="top" secondItem="Ubg-hw-3gg" secondAttribute="top" constant="8" id="bcb-ba-b95"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="vSj-n8-bav" secondAttribute="trailing" constant="25" id="iO5-CB-WdA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="slider" destination="vSj-n8-bav" id="VPl-xs-ef3"/>
+                <outlet property="titleLabel" destination="2g7-NK-Yog" id="BRY-2b-kg6"/>
+                <outlet property="valueLabel" destination="GIc-oC-pLc" id="jtb-ku-v4a"/>
+            </connections>
+            <point key="canvasLocation" x="46.5" y="21.5"/>
+        </tableViewCell>
+    </objects>
+</document>

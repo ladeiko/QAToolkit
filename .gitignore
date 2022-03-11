@@ -1,0 +1,4 @@
+.swiftpm
+*.xcuserdatad
+Pods
+Podfile.lock
